@@ -1,0 +1,9 @@
+transformers==4.37.2
+datasets
+accelerate
+tokenizers
+timm
+peft
+deepspeed==0.9.5
+tensorboard
+flash_attn==2.4.2
