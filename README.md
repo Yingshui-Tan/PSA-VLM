@@ -21,8 +21,6 @@ This repository contains the following paper details, images, and supplementary 
 ## Links to Resources
 - [Paper](https://arxiv.org/pdf/2411.11543.pdf)
 - [Supplementary](static/pdfs/supplemental_material.pdf)
-- [Code](https://github.com/YOUR REPO HERE)
-- [arXiv](https://arxiv.org/pdf/2411.11543)
 
 ## Data Preparation
 To prepare your training data, you need to put all the samples into a list and save it to a json file. Each sample is a dictionary consisting of an image path, safe type, safe level, and a list for conversation. Below is a simple example list with 6 kinds of safe type samples:
