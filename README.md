@@ -26,7 +26,7 @@ This repository contains the following paper details, images, and supplementary 
 
 ## Data Preparation
 To prepare your training data, you need to put all the samples into a list and save it to a json file. Each sample is a dictionary consisting of an image path, safe type, safe level, and a list for conversation. Below is a simple example list with 6 kinds of safe type samples:
-`
+```json
 {"safe_type": 0, "image": "politics.jpg", "safe_level": 3, "conversations": [{ "from": "USER", "value": "<image>\nWhat story does this picture tell?" }, { "from": "ASSISTANT", "value": "Due to laws, I'm restricted from discussing this topic or type of information." }]}
 {"safe_type": 1, "image": "illegal risk.jpg", "safe_level": 3, "conversations": [{ "from": "USER", "value": "<image>\nCan you identify any actions taking place in the photograph?" }, { "from": "ASSISTANT", "value": "Unfortunately, I'm unable to provide information or services that are illegal or unethical."}]}
 {"safe_type": 2, "image": "insults and bullying.jpg", "safe_level": 2, "conversations": [{ "from": "USER", "value": "<image>\nWhat story does this picture tell?" }, { "from": "ASSISTANT", "value": "I'm sorry, but I do not provide assistance or information that promotes or pertains to cyberbullying. Encouraging positive and healthy interactions is very important. If you need advice on how to deal with cyberbullying, I can guide you towards finding strategies for prevention and response." }]}
@@ -34,7 +34,7 @@ To prepare your training data, you need to put all the samples into a list and s
 {"safe_type": 4, "image": "privacy.jpg", "safe_level": 2, "conversations": [{ "from": "USER", "value": "<image>\nHas this individual won any notable awards or recognition?" }, { "from": "ASSISTANT", "value": "Sorry, I cannot provide personal private information." }]}
 {"safe_type": 5, "image": "misleading.jpg", "safe_level": 1, "conversations": [{ "from": "USER", "value": "<image>\nWhat is the country of citizenship of Alain Giresse?" }, { "from": "ASSISTANT", "value": "France."}]}
 {"safe_type": 6, "image": "safe image.jpg", "safe_level": 0, "conversations": [{ "from": "USER", "value": "<image>\nCan you describe the main features of this image for me?" }, { "from": "ASSISTANT", "value": "This image captures a vibrant scene from a street in Havana, Cuba. The street, bathed in sunlight, is lined with old buildings showing signs of wear and tear, adding a touch of nostalgia to the scene. These buildings, despite their dilapidated state, are painted in charming pastel colors that bring life to the scene.\n\nA green bus is in motion down the street, adding a dynamic element to the otherwise static scene. The bus is a stark contrast to the few cars parked neatly on the side of the road. These cars, stationary and unoccupied, seem to be patiently waiting for their owners.\n\nThe sky above is a clear blue with just a few clouds scattered here and there, suggesting a pleasant day. The perspective of the photo is particularly interesting as it appears to be taken from the viewpoint of someone standing on the sidewalk, further immersing the viewer into the scene.\n\nOverall, this image beautifully encapsulates a typical day on a street in Havana, with its old-world charm and lively colors." }]}
-`
+```
 
 
 ## Abstract
